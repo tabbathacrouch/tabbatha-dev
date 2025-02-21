@@ -3,19 +3,57 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Light theme */
+  --background: #dcf1e1;
+  --foreground: #0c311a;
+  --primary: #1a472a;
+  /* Dark green */
+  --green-50: #f0f9f1;
+  --green-100: #dcf1e1;
+  --green-200: #bbdfbf;
+  --green-300: #86c98e;
+  --green-400: #4baf57;
+  --green-500: #1a472a;
+  /* Your primary green */
+  --green-600: #0f3d21;
+  --green-700: #0c311a;
+  --green-800: #092714;
+  --green-900: #051d0e;
+  --green-950: #021407;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root.dark {
+  --background: #0c311a;
+  /* Very dark green instead of black */
+  --foreground: #dcf1e1;
+  /* Light green instead of white */
+  --primary: #4baf57;
+  /* Lighter green for dark mode */
+  --green-50: #021407;
+  --green-100: #051d0e;
+  --green-200: #092714;
+  --green-300: #0c311a;
+  --green-400: #0f3d21;
+  --green-500: #1a472a;
+  --green-600: #2a603f;
+  --green-700: #3a805f;
+  --green-800: #86c98e;
+  --green-900: #dcf1e1;
+  --green-950: #f0f9f1;
 }
+
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+}
+
+.prose-headings {
+  color: var(--green-100);
+}
+
+.prose-content {
+  color: var(--green-300);
 }
