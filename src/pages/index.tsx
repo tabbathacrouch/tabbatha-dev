@@ -72,6 +72,13 @@ export default function Home() {
 
   const projects: Project[] = [
     {
+      title: "Baby Names (Tinder) App",
+      description:
+        "A playful React + TypeScript app for swiping through baby names. Easily like or dislike names, then email your results. Perfect for parents-to-be or anyone looking for name inspiration. 😊",
+      link: "https://github.com/tabbathacrouch/my-baby-names-app/",
+      tags: ["React", "TypeScript", "EmailJS", "SheetBest API"],
+    },
+    {
       title: "Address Book",
       description:
         "Allows visitors to add contacts to an address book and search through the contacts using any field name. The project contains form validation and end-to-end testing.",
@@ -90,13 +97,6 @@ export default function Home() {
         "chart.js",
         "file-saver",
       ],
-    },
-    {
-      title: "Number Chart",
-      description:
-        "Features an interactive number chart where visitors can select the size (1-20, 1-50, or 1-100) and a color to illustrate number patterns. Additionally, users can tap the 'multiples' buttons to reveal the multiples of 2, 5, or 10.",
-      link: "https://github.com/tabbathacrouch/number-chart/",
-      tags: ["React", "JavaScript", "useState hook"],
     },
   ];
 
